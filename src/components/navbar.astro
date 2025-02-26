@@ -7,7 +7,7 @@ import UserIcon from "../assets/icons/userIcon.astro"
     <nav>
         <div id="logo">
             <MenuIcon></MenuIcon>
-            <img src="/src/images/logo-image.jpg" alt="Logo">
+            <img src="/public/images/logo-image.jpg" alt="Logo" height={50}/>
             <h2>SERVIYA</h2>
         </div>
         <UserIcon></UserIcon>
@@ -36,15 +36,12 @@ import UserIcon from "../assets/icons/userIcon.astro"
         gap: 0 5px
     }
 
-    img {
-        height: 3rem;
-    }
-
     h2 {
         font-size: 2rem;
         font-family: "Pacifico", serif;
         color: var(--primary-yellow);
     }
-
-
+    img {
+        height: 3rem
+    }
 </style>

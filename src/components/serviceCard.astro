@@ -1,9 +1,11 @@
 ---
+import { Image } from "astro:assets";
+
 const { img, title, description } = Astro.props;
 ---
 
 <article>
-    <img src={img} alt={title}/>
+    <img src={img} alt={title} />
     <div class="content">
         <h3>{title}</h3>
         <p>{description}</p>
@@ -26,10 +28,10 @@ const { img, title, description } = Astro.props;
     }
 
     .content {
-        margin: 0 30px
+        margin: 0 30px;
     }
 
-    h3{
+    h3 {
         color: var(--primary-yellow);
         margin-bottom: 10px;
     }
