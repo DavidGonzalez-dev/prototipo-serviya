@@ -1,16 +1,20 @@
 ---
-import MenuIcon from "../assets/icons/menuIcon.astro"
-import UserIcon from "../assets/icons/userIcon.astro"
+import MenuIcon from "../assets/icons/menuIcon.astro";
+import UserIcon from "../assets/icons/userIcon.astro";
 ---
 
 <header>
     <nav>
         <div id="logo">
-            <MenuIcon></MenuIcon>
-            <img src="https://i.postimg.cc/0N9fPrzY/logo-image.jpg" alt="Logo" height={50}/>
+            <img
+                src="https://i.postimg.cc/0N9fPrzY/logo-image.jpg"
+                alt="Logo"
+                height={50}
+            />
             <h2>SERVIYA</h2>
         </div>
-        <UserIcon></UserIcon>
+
+        <button>Coviertete en helper</button>
     </nav>
 </header>
 
@@ -33,7 +37,24 @@ import UserIcon from "../assets/icons/userIcon.astro"
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 0 5px
+        gap: 0 5px;
+    }
+
+    button {
+        padding: 7px 14px;
+        border-radius: 1rem;
+        border: 1px solid var(--primary-yellow);
+        background-color: transparent;
+        color: var(--primary-yellow);
+        font-weight: 700;
+        font-size: 1rem;
+        transition: .25s
+    }
+
+    button:hover{
+        border: 1px solid transparent;
+        color: white;
+        background-color: var(--primary-yellow);
     }
 
     h2 {
@@ -42,6 +63,6 @@ import UserIcon from "../assets/icons/userIcon.astro"
         color: var(--primary-yellow);
     }
     img {
-        height: 3rem
+        height: 3rem;
     }
 </style>

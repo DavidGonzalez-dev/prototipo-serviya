@@ -40,6 +40,7 @@ const services = [
     },
 ]
 ---
+<h2>Our Services</h2>
 <section>
     {
         services.map(service => (
@@ -54,6 +55,17 @@ const services = [
         flex-wrap: wrap;
         gap: 40px;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+    }
+    h2{
+        margin: 3rem 0 1rem 0;
+        font-size: 2rem;
+        font-family: "Pacifico", serif;
+        font-weight: 200;
+        color: white;
+        background: var(--primary-yellow);
+        width: fit-content;
+        padding: 5px 20px;
+        border-radius: 2rem;
     }
 </style>
