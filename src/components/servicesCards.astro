@@ -1,0 +1,60 @@
+---
+import ServiceCard from "./serviceCard.astro";
+
+const services = [
+    {
+        img: "/src/images/carpenter.jpg",
+        title: "Carpenter",
+        description:
+            "Expert carpentry services, including custom furniture, repairs, installations, and woodworking craftsmanship for homes and businesses.",
+    },
+    {
+        img: "/src/images/cleaner.jpg",
+        title: "Cleaner",
+        description:
+            "Professional cleaning services for homes and offices, specializing in thorough, efficient, and eco-friendly solutions.",
+    },
+    {
+        img: "/src/images/electricity.jpg",
+        title: "Electricity",
+        description:
+            "Certified electrical services for installations, repairs, and maintenance, ensuring safe and reliable power solutions for homes and businesses.",
+    },
+    {
+        img: "/src/images/gardener.jpg",
+        title: "Gardener",
+        description:
+            "Expert carpentry services, including custom furniture, repairs, installations, and woodworking craftsmanship for homes and businesses.",
+    },
+    {
+        img: "/src/images/painter.jpg",
+        title: "Painter",
+        description:
+            "Professional painting services for homes and businesses, offering quality finishes, color consultation, and surface preparation.",
+    },
+    {
+        img: "/src/images/plumber.jpg",
+        title: "Plumber",
+        description:
+            "Expert plumbing services, including repairs, installations, and maintenance for residential and commercial properties.",
+    },
+]
+
+---
+<section>
+    {
+        services.map(service => (
+            <ServiceCard img={service.img} title={service.title} description={service.description}/>
+        ))
+    }
+</section>
+
+<style>
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+</style>

@@ -2,9 +2,8 @@
 import Layout from '../layouts/Layout.astro'
 import Navbar from '../components/navbar.astro'
 import SearchBar from '../components/searchBar.astro'
+import ServicesCards from '../components/servicesCards.astro'
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
@@ -14,7 +13,15 @@ import SearchBar from '../components/searchBar.astro'
 		<span>Busca tu helper</span>
 	</div>
 
-	<SearchBar></SearchBar>
+	<main>
+		<!-- Searchbar -->
+		<SearchBar></SearchBar>
+
+		<!-- Services Cards -->
+>		<ServicesCards></ServicesCards>
+	</main>
+
+
 </Layout>
 
 <style>
