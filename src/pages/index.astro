@@ -1,13 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Navbar from "../components/navbar.astro";
 import SearchBar from "../components/searchBar.astro";
-import ServicesCards from "../components/servicesCards.astro";
-import Tutorial from "../components/tutorial.astro";
+import ServicesCards from "../components/sections/servicesCards.astro";
+import Tutorial from "../components/sections/tutorial.astro";
+import CustomersTestimonies from "../components/sections/customersTestimonies.astro";
 ---
 
 <Layout>
-	<Navbar />
 	<div id="heading">
 		<h1>¿Problemas con tu hogar?</h1>
 		<span>Busca tu helper</span>
@@ -22,12 +21,15 @@ import Tutorial from "../components/tutorial.astro";
 
 		<!-- Tutoria Serction -->
 		<Tutorial />
+
+		<!-- Testimonies Section -->
+		<CustomersTestimonies />
 	</main>
 
 	<style>
-		main{
+		main {
 			width: 90%;
-			place-self: center
+			place-self: center;
 		}
 
 		#heading {
@@ -50,5 +52,6 @@ import Tutorial from "../components/tutorial.astro";
 			font-size: 1.2rem;
 			color: #0005;
 		}
+
 	</style>
 </Layout>

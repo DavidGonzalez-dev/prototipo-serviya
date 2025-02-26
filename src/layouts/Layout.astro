@@ -1,3 +1,8 @@
+---
+import Footer from "../components/footer.astro"
+import Navbar from "../components/navbar.astro"
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -8,7 +13,9 @@
 		<title>Serviya</title>
 	</head>
 	<body>
+		<Navbar/>
 		<slot />
+		<Footer/>
 	</body>
 </html>
 
@@ -27,5 +34,16 @@
 	body {
 		font-size: 15px;
 		font-family: "Roboto", serif;
+	}
+	h2{
+		margin: 3rem 0 1rem 0;
+        font-size: 2rem;
+        font-family: "Pacifico", serif;
+        font-weight: 200;
+        color: white;
+        background: var(--primary-yellow);
+        width: fit-content;
+        padding: 5px 20px;
+        border-radius: 2rem;
 	}
 </style>

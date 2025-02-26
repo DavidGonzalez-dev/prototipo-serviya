@@ -1,0 +1,36 @@
+---
+import CustomerCard from "../customerCard.astro"
+
+const testimonies = [
+    {
+        avatar: "https://i.postimg.cc/8krR2rZh/customer1.jpg",
+        name: "Jane Smith",
+        testimony: "Excellent service and fantastic results. Highly recommend!"
+    },
+    {
+        avatar: "https://i.postimg.cc/yd2FJV8g/customer2.jpg",
+        name: "Alice Johnson",
+        testimony: "A truly outstanding experience from start to finish."
+    },
+    {
+        avatar:"https://i.postimg.cc/8cWLMq7y/customer3.jpg",
+        name: "Bob Brown",
+        testimony: "High quality and great customer support. Will buy again."
+    }
+]
+---
+<h2>What Our Customers Say</h2>
+<section id="testimonies">
+    {
+        testimonies.map(customer => (
+            <CustomerCard avatar={customer.avatar} name={customer.name} testimony={customer.testimony}/>
+        ))
+    }
+</section>
+<style>
+    section{
+        display: flex;
+        gap: 30px;
+        margin-bottom: 4rem;
+    }
+</style>

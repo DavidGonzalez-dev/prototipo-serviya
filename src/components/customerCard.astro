@@ -1,0 +1,30 @@
+---
+const {avatar, name, testimony} = Astro.props
+---
+<article>
+    <img src={avatar} alt="Profile Picture">
+    <h4>{name}</h4>
+    <p>{testimony}</p>
+</article>
+<style>
+    h2{
+        place-self: center;
+    }
+    article{
+        border: 1px solid #b9b9b938;
+        width: 40rem;
+        padding: 20px;
+        border-radius: 1rem;
+    }
+
+    img{
+        height: 3rem;
+        border-radius: 50%;
+        border: 1px solid var(--primary-yellow);
+    }
+
+    h4{
+        color: var(--primary-yellow);
+        font-size: 1.2rem;
+    }
+</style>
