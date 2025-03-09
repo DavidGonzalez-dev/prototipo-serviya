@@ -1,8 +1,9 @@
 ---
+const {destiny} = Astro.props
 ---
 <form action="#", method="post">
     <input type="text" placeholder="Describe tu problema...">
-    <button type="submit">Buscar</button>
+    <button><a href={destiny}>Buscar</a></button>
 </form>
 
 <style>
@@ -22,11 +23,17 @@
         font-size: 1rem;
     }
 
+    a {
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
     button {
         height: 100%;
         padding: 7px 14px;
-        border: none;
         background: var(--primary-yellow);
+        border: none;
         color: white;
         font-size: 1rem;
         border-radius: 0 50px 50px 0;

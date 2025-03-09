@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro"
+import UserForm from "../components/userForm.astro"
+import Loader from "../components/loader.astro"
+---
+
+<Layout>
+    <main>
+        <div id="loader-header">
+            <h1>Buscando al helper más cercano...</h1>
+            <Loader/>
+        </div>
+        <UserForm/>
+    </main>
+</Layout>
+
+<style>
+    #loader-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    main {
+        height: 79.8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 2rem;
+    }
+</style>

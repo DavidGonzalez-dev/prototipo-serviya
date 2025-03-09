@@ -1,0 +1,66 @@
+<form action="post">
+    <div class="form-control">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="Tu nombre">
+    </div>
+
+    <div class="form-control">
+        <label for="telefono">Teléfono</label>
+        <input type="text" id="telefono" placeholder="Tu telefono">
+    </div>
+
+    <div class="form-control">
+        <label for="ubicacion">Ubicación</label>
+        <input type="text" id="ubicacion" placeholder="Tu ubicacion">
+    </div>
+    <button><a href="/result/">Enviar</a></button>
+</form>
+
+<style>
+    form{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #635f5f3f;
+        padding: 3rem 1.5rem;
+        border-radius: 20px;
+    }
+
+    .form-control{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 1rem;
+    }
+
+    .form-control input{
+        padding: 7px;
+        border: 1px solid #5a5a5a41;
+        border-radius: 5px;
+    }
+
+    button{
+        padding: 7px 20px;
+        width: fit-content;
+        margin: 0 auto;
+        border-radius: 20px;
+        border: 2px solid var(--primary-yellow);
+        background: none;
+        transition: .25s;
+    }
+    button a{
+        color: var(--primary-yellow);
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    button:hover{
+        border: 2px solid transparent;
+        background: var(--primary-yellow);
+    }
+
+    button:hover a{
+        color: white;
+    }
+
+</style>
