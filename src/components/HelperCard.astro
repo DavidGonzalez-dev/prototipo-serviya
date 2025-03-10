@@ -1,0 +1,79 @@
+---
+const {img, name, punctuation} = Astro.props
+import Star from "../assets/icons/star.astro"
+import UnfilledStar from "../assets/icons/UnfilledStar.astro"
+---
+
+<article>
+    <div class="user">
+        <img src={img} alt="Helper Avatar Image">
+        <div class="user-info">
+            <h3>{name}</h3>
+            <div class="punctuation">
+                <div class="stars">
+                    {
+                        Array.from({length: punctuation}).map(filledStar => (
+                            <Star/>
+                        ))
+                    }
+                    {
+                        Array.from({length: Math.ceil(5 - punctuation)}).map(unfilledStar => (
+                            <UnfilledStar/>
+                        ))
+                    }
+                </div>
+                <span>{punctuation}</span>
+            </div>
+        </div>
+    </div>
+    <div class="description">
+        <p>Alex es bueno en plomería, electricidad y carpintería. Estimado del precio: $50 - $150 dependiendo de la complejidad del problema.</p>
+    </div>
+    <a href="/payment/">Solicitar Servicio</a>
+    <p class="note">Tienes 1 hora para confirmar el servicio</p>
+</article>
+
+<style>
+
+    article{
+        width: 25%;
+        padding: 2rem;
+        border: 1px solid #7a7a7a2a;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+
+    .user{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .user img{
+        height: 60px;
+        border-radius: 50%;
+    }
+    .punctuation{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    a{
+        padding: 7px 14px;
+        border-radius: 20px;
+        background: var(--primary-yellow);
+        color: white;
+        text-decoration: none;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .note{
+        font-size: .9rem;
+        opacity: .5;
+        margin: 0 auto;
+    }
+</style>

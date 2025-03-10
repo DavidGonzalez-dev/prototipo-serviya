@@ -1,4 +1,6 @@
 <form action="post">
+    <h2>Permitenos Conocerte</h2>
+
     <div class="form-control">
         <label for="nombre">Nombre</label>
         <input type="text" id="nombre" placeholder="Tu nombre">
@@ -13,17 +15,23 @@
         <label for="ubicacion">Ubicación</label>
         <input type="text" id="ubicacion" placeholder="Tu ubicacion">
     </div>
-    <button><a href="/result/">Enviar</a></button>
+    <a href="/result/">Enviar</a>
 </form>
 
 <style>
     form{
-        width: 400px;
+        width: 30%;
         display: flex;
         flex-direction: column;
         border: 1px solid #635f5f3f;
-        padding: 3rem 1.5rem;
+        padding:1.5rem;
         border-radius: 20px;
+    }
+
+    h2{
+        font-size: 1.3rem;
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
 
     .form-control{
@@ -37,9 +45,10 @@
         padding: 7px;
         border: 1px solid #5a5a5a41;
         border-radius: 5px;
+        font-size: 1rem;
     }
 
-    button{
+    a{
         padding: 7px 20px;
         width: fit-content;
         margin: 0 auto;
@@ -47,20 +56,17 @@
         border: 2px solid var(--primary-yellow);
         background: none;
         transition: .25s;
-    }
-    button a{
         color: var(--primary-yellow);
         text-decoration: none;
         font-weight: 700;
     }
+    
 
-    button:hover{
+    a:hover{
         border: 2px solid transparent;
         background: var(--primary-yellow);
-    }
-
-    button:hover a{
         color: white;
     }
+
 
 </style>

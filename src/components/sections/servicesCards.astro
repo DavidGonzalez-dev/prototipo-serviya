@@ -1,50 +1,55 @@
 ---
-import ServiceCard from "../serviceCard.astro"
+import ServiceCard from "../serviceCard.astro";
 
 const services = [
     {
         img: "https://i.postimg.cc/D0R6TgG0/carpenter.jpg",
-        title: "Carpenter",
+        title: "Carpinteria",
         description:
-            "Expert carpentry services, including custom furniture, repairs, installations, and woodworking craftsmanship for homes and businesses.",
+            "Servicios expertos de carpintería, que incluyen muebles a medida, reparaciones, instalaciones y artesanía en madera para hogares y empresas.",
     },
     {
         img: "https://i.postimg.cc/Pf72Yt7H/cleaner.jpg",
-        title: "Cleaner",
+        title: "Limpieza",
         description:
-            "Professional cleaning services for homes and offices, specializing in thorough, efficient, and eco-friendly solutions.",
+            "Servicios de limpieza profesional para hogares y oficinas, especializados en soluciones exhaustivas, eficientes y ecológicas.",
     },
     {
         img: "https://i.postimg.cc/dtTn9bMy/electricity.jpg",
-        title: "Electricity",
+        title: "Electricidad",
         description:
-            "Certified electrical services for installations, repairs, and maintenance, ensuring safe and reliable power solutions for homes and businesses.",
+            "Servicios eléctricos certificados para instalaciones, reparaciones y mantenimiento, garantizando soluciones energéticas seguras y confiables para hogares y negocios.",
     },
     {
         img: "https://i.postimg.cc/htLrkVt4/gardener.jpg",
-        title: "Gardener",
+        title: "Jardineria",
         description:
-            "Expert carpentry services, including custom furniture, repairs, installations, and woodworking craftsmanship for homes and businesses.",
+            "Servicios de jardineria especializados como, arreglo de jardines, poda de arbustos artistica. Jardineros profesionales y confiables.",
     },
     {
         img: "https://i.postimg.cc/CKJ41Y8W/painter.jpg",
-        title: "Painter",
+        title: "Pintura",
         description:
-            "Professional painting services for homes and businesses, offering quality finishes, color consultation, and surface preparation.",
+            "Servicios profesionales de pintura para hogares y negocios, ofreciendo acabados de calidad, asesoramiento de color y preparación de superficies",
     },
     {
         img: "https://i.postimg.cc/mDDy1qNh/plumber.jpg",
         title: "Plumber",
         description:
-            "Expert plumbing services, including repairs, installations, and maintenance for residential and commercial properties.",
+            "Servicios de plomería expertos, que incluyen reparaciones, instalaciones y mantenimiento para propiedades residenciales y comerciales",
     },
-]
+];
 ---
-<h2>Our Services</h2>
+
+<h2>Nuestros Servicios</h2>
 <section>
     {
-        services.map(service => (
-            <ServiceCard img={service.img} title={service.title} description={service.description}/>
+        services.map((service) => (
+            <ServiceCard
+                img={service.img}
+                title={service.title}
+                description={service.description}
+            />
         ))
     }
 </section>

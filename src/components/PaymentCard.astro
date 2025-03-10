@@ -1,0 +1,39 @@
+<article>
+    <p>Por favor, selecciona tu método de pago. Deberás pagar la mitad ahora y la otra mitad al finalizar el servicio.</p>
+    <p>Selecciona tu metodo de pago:</p>
+    <select id="payment-method">
+        <option value="">Nequi</option>
+        <option value="">Tarjeta</option>
+        <option value="">Efectivo</option>
+    </select>
+    <a href="/confirmation/">Pagar</a>
+</article>
+
+<style>
+    article{
+        padding: 2rem;
+        border: 1px solid #6d6d6d41;
+        border-radius: 20px;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    select{
+        padding: 7px 14px;
+        font-size: 1rem;
+        border-radius: 10px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        background: var(--primary-yellow);
+        width: fit-content;
+        margin: 0 auto;
+        padding: 7px 14px;
+        border-radius: 10px;
+        font-weight: 700;
+    }
+</style>

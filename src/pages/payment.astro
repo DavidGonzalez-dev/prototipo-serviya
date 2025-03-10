@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Layout.astro"
+import PaymentCard from "../components/PaymentCard.astro"
+---
+
+<Layout>
+    <main>
+        <h1>Elije el Metodo de Pago</h1>
+        <PaymentCard/>
+    </main>
+</Layout>
+<style>
+    main{
+        height: 79.8vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    h1{
+        font-family: "Pacifico", serif;
+        color: var(--primary-yellow);   
+    }
+</style>
